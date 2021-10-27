@@ -9,6 +9,7 @@ const Minter = (props) => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [url, setURL] = useState("");
+  const [loader, setLoader] = useState(false);
   
   /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(async () => { //TODO: implement
@@ -25,6 +26,7 @@ const Minter = (props) => {
   };
 
   const onMintPressed = async () => { //TODO: implement
+    setStatus("Loading................");
     const { status } = await mintNFT(url, name, description);
     setStatus(status);
   };
