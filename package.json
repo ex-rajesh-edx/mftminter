@@ -6,8 +6,8 @@
         "@alch/alchemy-web3": "^1.0.1"
     },
     "scripts": {
-        "start": "cd minter-starter-files && npm install && npm start",
-        "build": "cd minter-starter-files && npm run-script build"
+        "start": "cd minter-starter-files && npm start",
+        "build": "cd minter-starter-files && npm install && npm run-script build"
     },
     "browserslist": {
         "production": [
